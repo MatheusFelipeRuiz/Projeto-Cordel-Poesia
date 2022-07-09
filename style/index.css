@@ -34,7 +34,7 @@ header>p>a:hover
 .poesia
 {
     text-align: left; color: black; background-color: white; 
- height: 640px; font: bold 47px 'Sriracha',Verdana,Tahoma, sans-serif;
+ height: 640px; font:  47px 'Sriracha',Verdana,Tahoma, sans-serif;
  padding: 10px;
 }
 .poesia>p{text-align: left;}
@@ -46,5 +46,25 @@ header>p>a:hover
     color: white; padding: 20px;
 }
 #joaninha>div
-{   background-color: black; width: 600px;
+{   background-color: black; width: 600px;}
+
+#tx_poesia{
+    background-image: url('https://professorguanabara.github.io/projeto-cordel/imagens/background002.jpg');
+    background-attachment: fixed;
+    background-position: center center;
+    color: white; padding: 20px;
+}
+#tx_poesia>div{background-color: rgba(0, 0, 0, 0.425); width: 600px;}
+
+footer
+{   background-color: black; padding: 10px; text-align: center;
+    color: white; font: 16px Verdana, Tahoma, sans-serif;
+}
+footer>a
+{   color: white; font: bold 16px Verdana, Tahoma, sans-serif;
+    text-decoration: none;
+}
+footer>a:hover
+{   color: white; font: bold 16px Verdana, Tahoma, sans-serif;
+    text-decoration: underline;
 }
