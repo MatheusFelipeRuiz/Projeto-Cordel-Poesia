@@ -5,66 +5,80 @@
 {
     --corGen1: black;
     --corGen2: white;
+    --fonte1: 'Passion One', Georgia, 'Times New Roman', Times, serif;
+    --fonte2: Verdana,Tahoma, sans-serif,'Sriracha';
 }
 *{margin: 0px; padding: 0px;}
 
 header
 {
-    background-color: var(--corGen1); height: 250px
+    background-color: var(--corGen1); height: 190px; font: bold normal 136px var(--fonte1);
+    padding-bottom: 10px;
 }
 header>h1
 {
-    color: white;  font: bold normal 136px 'Passion One', Georgia, 'Times New Roman', Times, serif;
-    text-align: center; padding-top: 20px; 
+    color: white;   font-size: 10vw;
+    text-align: center; padding-top: 20px; margin: auto; 
 }
 header>p
 {
-    color: white;   text-align: center; font: bold 16px Verdana,Tahoma, sans-serif;
+    color: white;   text-align: center; font: bold 16px var(--fonte2);
+    
 }
 header>p>a
 {
-    color: white; font: bold 16px Verdana,Tahoma, sans-serif;
+    color: white; font: bold 16px var(--fonte2);
     text-decoration: none;
 }
 header>p>a:hover
 {
-    color: white; font: bold 16px Verdana,Tahoma, sans-serif;
+    color: white; font: bold 16px var(--fonte2);
     text-decoration: underline
 }
 .poesia
 {
     text-align: left; color: black; background-color: white; 
- height: 640px; font:  47px 'Sriracha',Verdana,Tahoma, sans-serif;
- padding: 10px;
+    height: 50vw; font:  3em 'Sriracha',Verdana,Tahoma, sans-serif;
+    padding-top: 10vh; padding-bottom: 10vh; 
+    line-height: 2em; /* Espalamento entre as linhas do texto */
+    padding-left: 50px;
+    font-size: 3vw; /* O segredo para adaptar uma div, de acordo com o tamanho utilizado é as unidades VW e VH */
 }
-.poesia>p{text-align: left;}
+.poesia>p{text-align: left; font-size: 3vw;}
 #joaninha
 {
     background-image: url('https://professorguanabara.github.io/projeto-cordel/imagens/background001.jpg');
     background-attachment: fixed;
     background-position: center center;
     color: white; padding: 20px;
+    padding-left: 50px;
+    height: 90vh; /* Esse atributo ajuda na responsividade da imagem, no quesito altura */
+    display: inline-block; /* O conteúdo da caixa vai se adaptar de acordo com o tamanho que ela adquire */
+    width: 100vw;
 }
 #joaninha>div
-{   background-color: black; width: 600px;}
+{   background-color: rgba(0, 0, 0, 0.384); width: 50vw; font-size: 4vh; height: 13vh;}
 
 #tx_poesia{
     background-image: url('https://professorguanabara.github.io/projeto-cordel/imagens/background002.jpg');
     background-attachment: fixed;
     background-position: center center;
     color: white; padding: 20px;
+    padding-left: 50px;
+    height: 40vh;
 }
 #tx_poesia>div{background-color: rgba(0, 0, 0, 0.425); width: 600px;}
 
 footer
 {   background-color: black; padding: 10px; text-align: center;
     color: white; font: 16px Verdana, Tahoma, sans-serif;
+    margin: auto;
 }
 footer>a
-{   color: white; font: bold 16px Verdana, Tahoma, sans-serif;
-    text-decoration: none;
+{   color: white; font: bold 1em var(--fonte2);
+    text-decoration: none;  margin: auto;
 }
 footer>a:hover
-{   color: white; font: bold 16px Verdana, Tahoma, sans-serif;
-    text-decoration: underline;
+{   color: white; font: bold 16px var(--fonte2);
+    text-decoration: underline;     margin: auto;
 }
